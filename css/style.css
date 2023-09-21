@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+* {
+    /* border: 2px solid rgb(228, 228, 228); */
+}
+
+nav ul>li {
+    display: inline;
+    padding: 0 20px;
+    
+}
+
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    margin: 0;
+    /* color: red; */
+}
+
+.hero {
+    height: 100vh;
+    background: url(../theater-image-background.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 100px;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.hero h1:hover {
+    font-size: 120px;
+    color:rgb(255, 196, 0);
+    font-weight: bolder
+}
+
+section {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.play {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    column-gap: 30px;
+}
+
+.read-more button {
+    background-color: orange;
+    font-size: 20px;
+    /* border-radius: 20px; */
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.read-more {
+    align-self: center
+}
+
+.description button {
+    background-color: rgb(0, 194, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.play {
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+footer h3 {
+    color: orange;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer ul {
+    padding: 0;
+}
+
+footer ul>li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li i {
+    font-size: 30px;
+    color: orange;
+    margin-right: 10px;
+}
