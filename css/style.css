@@ -29,6 +29,11 @@ header h1 {
     /* color: red; */
 }
 
+section>h2 {
+    background-color: rgb(231, 231, 231);
+    padding: 10px 40px;
+    border: 1px solid gray;
+}
 .hero {
     height: 100vh;
     background: url(../theater-image-background.png);
@@ -64,17 +69,30 @@ section {
     column-gap: 30px;
 }
 
+.play p {
+    margin-bottom: 25px;
+    /* font-weight: 600; */
+    color: rgb(54, 54, 54);
+}
+
 .read-more button {
     background-color: orange;
     font-size: 20px;
     /* border-radius: 20px; */
-    padding: 20px;
+    padding: 15px;
     color: rgb(0, 0, 0);
     border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.read-more button:hover {
+    background-color: purple;
+    color: white;
 }
 
 .read-more {
-    align-self: center
+    align-self: center;
 }
 
 .description button {
@@ -87,9 +105,10 @@ section {
 }
 
 .play {
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid rgb(214, 214, 214);
     padding-bottom: 20px;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 footer {
